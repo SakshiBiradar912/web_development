@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulma Card Component</title>
+  <!-- Link to Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <style>
+    .card-image img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="1.jpg" alt="Card Image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h2 class="title">Card Title</h2>
+            <p>
+              This is a description of the card. It contains some text to describe the content inside the card. It is responsive and looks good on different screen sizes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeat the card component for more items -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="2.jpg" alt="Card Image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h2 class="title">Card Title 2</h2>
+            <p>
+              This is another card. It works the same way, displaying an image and some content inside it.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="3.jpg" alt="Card Image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <h2 class="title">Card Title 3</h2>
+            <p>
+              Another example of a card with responsive layout and text.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

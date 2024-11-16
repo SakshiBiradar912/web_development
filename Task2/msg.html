@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greeting Message</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f8ff;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    .container {
+      text-align: center;
+      padding: 30px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #4CAF50;
+    }
+
+    .greeting {
+      font-size: 24px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Welcome!</h1>
+    <p class="greeting" id="greetingMessage">Click the button below to get your greeting!</p>
+    <button onclick="greet()">Get Greeting</button>
+  </div>
+
+  <script>
+    function greet() {
+      var currentTime = new Date().getHours();
+      var greetingMessage;
+
+      if (currentTime < 12) {
+        greetingMessage = 'Good Morning!';
+      } else if (currentTime < 18) {
+        greetingMessage = 'Good Afternoon!';
+      } else {
+        greetingMessage = 'Good Evening!';
+      }
+
+      document.getElementById('greetingMessage').textContent = greetingMessage;
+    }
+  </script>
+
+</body>
+</html>
